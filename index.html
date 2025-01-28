@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phantom YouTube</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-left">
+            <div class="menu-icon" aria-label="Menu">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <a href="/" class="logo">
+                <span>Phantom</span>
+                <span class="tube">Tube</span>
+            </a>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search">
+            <button class="search-btn" aria-label="Search">
+                <i data-lucide="search"></i>
+            </button>
+            <button class="voice-search-btn" aria-label="Voice search">
+                <i data-lucide="mic"></i>
+            </button>
+        </div>
+        <div class="nav-right">
+            <button class="mobile-search-btn" aria-label="Open search">
+                <i data-lucide="search"></i>
+            </button>
+            <button class="upload-btn" aria-label="Create">
+                <i data-lucide="video"></i>
+            </button>
+            <button class="notifications-btn" aria-label="Notifications">
+                <i data-lucide="bell"></i>
+                <span class="notification-badge">3</span>
+            </button>
+            <button class="signin-btn" aria-label="Sign in">
+                <i data-lucide="user-circle-2"></i>
+                <span class="signin-text">Sign in</span>
+            </button>
+        </div>
+    </nav>
+
+    <div class="mobile-search">
+        <div class="mobile-search-header">
+            <button class="mobile-search-back" aria-label="Back">
+                <i data-lucide="arrow-left"></i>
+            </button>
+            <input type="text" placeholder="Search Phantom Tube">
+            <button class="mobile-voice-search" aria-label="Voice search">
+                <i data-lucide="mic"></i>
+            </button>
+        </div>
+    </div>
+
+    <div class="container">
+        <aside class="sidebar">
+            <div class="sidebar-section">
+                <div class="sidebar-item active">
+                    <i data-lucide="home"></i>
+                    <span>Home</span>
+                </div>
+                <div class="sidebar-item">
+                    <i data-lucide="trending-up"></i>
+                    <span>Trending</span>
+                </div>
+                <div class="sidebar-item">
+                    <i data-lucide="play-square"></i>
+                    <span class="subscription-text">Subscriptions</span>
+                    <span class="subscription-text-short">Subs</span>
+                </div>
+            </div>
+            <div class="sidebar-section">
+                <div class="sidebar-item">
+                    <i data-lucide="library"></i>
+                    <span>Library</span>
+                </div>
+                <div class="sidebar-item">
+                    <i data-lucide="history"></i>
+                    <span>History</span>
+                </div>
+                <div class="sidebar-item">
+                    <i data-lucide="clock"></i>
+                    <span>Watch Later</span>
+                </div>
+                <div class="sidebar-item">
+                    <i data-lucide="thumbs-up"></i>
+                    <span>Liked Videos</span>
+                </div>
+            </div>
+            <div class="sidebar-section">
+                <h3 class="sidebar-title">
+                    <span class="subscription-text">Subscriptions</span>
+                    <span class="subscription-text-short">Subs</span>
+                </h3>
+                <div class="sidebar-item">
+                    <img src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=32&h=32&fit=crop&crop=faces" alt="Channel" class="channel-avatar">
+                    <span>Tech Phantom</span>
+                </div>
+                <div class="sidebar-item">
+                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=32&h=32&fit=crop&crop=faces" alt="Channel" class="channel-avatar">
+                    <span>Code Masters</span>
+                </div>
+            </div>
+        </aside>
+
+        <main class="content">
+            <div class="video-grid">
+                <!-- Video items will be dynamically added here -->
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
